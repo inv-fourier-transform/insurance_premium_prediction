@@ -1,10 +1,10 @@
 import pandas as pd
 import joblib
 
-model_u25 = joblib.load("artifacts\model_u25.joblib")
-model_others = joblib.load("artifacts\model_others.joblib")
-scaler_u25 = joblib.load("artifacts\scaler_u25.joblib")
-scaler_others = joblib.load("artifacts\scaler_others.joblib")
+model_u25 = joblib.load("artifacts/model_u25.joblib")
+model_others = joblib.load("artifacts/model_others.joblib")
+scaler_u25 = joblib.load("artifacts/scaler_u25.joblib")
+scaler_others = joblib.load("artifacts/scaler_others.joblib")
 
 def calculate_normalized_risk(medical_history):
     risk_scores = {
